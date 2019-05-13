@@ -4,11 +4,13 @@
 
 class MouseListener {
 public:
+  virtual ~MouseListener() {}
   virtual void onLeftMouseButton(int, int) = 0;
 };
 
 class KeyboardListener {
 public:
+  virtual ~KeyboardListener() {}
   virtual void onKeyPressed(int) = 0;
 };
 
